@@ -34,7 +34,7 @@
     <input type="radio" value="cash" name="payment" class="form-control"><span>Card</span><br><br>
     <input type="radio" value="cash" name="payment" class="form-control"><span>Cash On Delivery</span><br><br>
   </div>
-  <button type="submit" class="btn btn-primary">Order Now</button>
+  <button  class="btn btn-primary " onclick=" window.location= '{{url("example1")}}' ">Order Now</button>
 </form>
 <br>
 </div>
