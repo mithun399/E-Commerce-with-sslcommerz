@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use App\Library\SslCommerz\SslCommerzNotification;
+use App\Models\Product;
 
 class SslCommerzPaymentController extends Controller
 {
 
     public function exampleEasyCheckout()
     {
-        return view('exampleEasycheckout');
+        $products=Product::all();
+        return view('exampleEasycheckout',compact('products'));
     }
 
     public function exampleHostedCheckout()

@@ -7,7 +7,7 @@
 <div class="col-sm-6">
 <div class="trending-wrapper">
     <h2>Result For Products</h2>
-    <a class="btn btn-success" href="ordernow">Order Now</a><br><br>
+    <button class="btn btn-success" href="" onclick=" window.location= '{{url("example1")}}' ">Order Now</button><br><br>
     @foreach($products as $item)
   <div class="row searched-item cart-list-devider">
       <div class="col-sm-3">
